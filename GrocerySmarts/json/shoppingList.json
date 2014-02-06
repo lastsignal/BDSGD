@@ -1,0 +1,18 @@
+﻿{
+	"mealRelatedItems": {
+		"items": [
+			{ "item": "Red Bean $5/lb", "checked": false },
+			{ "item": "Green Bean $6/lb", "checked": true },
+			{ "item": "Rice $25/bag", "checked": false }
+		],
+		"subTotal": 400
+	},
+	"otherItems": {
+		"items": [
+			{ "item": "Tide: $10.00", "checked": false },
+			{ "item": "Paper Towel: $15.00", "checked": true },
+			{ "item": "Tissues: $5.00", "checked": true }
+		],
+		"subTotal": 100
+	}
+}
