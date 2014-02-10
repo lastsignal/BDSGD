@@ -35,6 +35,10 @@ grocerySmartsApp.appConfig = {
 	    "routeConfig" : { "templateUrl": "app/view/preferences.html", "controller": "PreferencesCtrl" }
 	},
 	{
+	    "viewUrl" : "/profile",
+	    "routeConfig" : { "templateUrl": "app/view/profile.html", "controller": "ProfileCtrl" }
+	},
+	{
 	    "viewUrl" : "/budget",
 	    "routeConfig" : { "templateUrl": "app/view/budget.html", "controller": "BudgetCtrl" }
 	}

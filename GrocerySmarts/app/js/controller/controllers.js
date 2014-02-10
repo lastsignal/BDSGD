@@ -1,9 +1,12 @@
 ﻿var grocerySmartsControllers = angular.module('grocerySmartsControllers', ["grocerySmartsServices"]);
 
-grocerySmartsControllers.controller('HeaderCtrl', function($scope) {
+grocerySmartsControllers.controller('HeaderCtrl', function($scope, $route, $location) {
     $scope.goBack = function() {
 	window.history.back();
     };
+    $scope.viewName = $location.url().substr(1);
+//    console.log("current view" + $location.url());
+//    console.log("current route" + $route);
 });
 
 grocerySmartsControllers.controller('DashboardCtrl', function($scope, $http) {
@@ -31,3 +34,8 @@ grocerySmartsControllers.controller('ShoppingListCtrl', function($scope, $http, 
 		+ "error header " + response.headers + "error config " + response.config);
     });
 });
+
+grocerySmartsControllers.controller('ProfileCtrl', function($scope) {
+    $scope.today = new Date().toDateString();
+});
+
